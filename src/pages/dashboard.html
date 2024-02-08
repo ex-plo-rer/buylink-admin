@@ -3,9 +3,82 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dashboard</title>
+  <title>Main Dashboard</title>
+  <link rel="stylesheet" href="../output.css">
+  <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
 </head>
 <body>
-  <h1>Dashboard</h1>
+  <nav class="w-full flex justify-end">
+    <div class="flex gap-2 items-center bg-white w-40 h-10 rounded-md py-6 px-2 cursor-pointer">
+      <div class="relative w-8 h-8 overflow-hidden bg-gray-100 rounded-full dark:bg-gray-600">
+          <svg class="absolute w-10 h-10 text-gray-400 -left-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd"></path></svg>
+      </div>
+      <p class="font-semibold">Admin</p>
+    </div>
+  </nav>
+  <div class="bg-white shadow-lg rounded-lg p-6 my-4">
+    <h2 class="text-2xl font-semibold mb-8">Activity Overview</h2>
+    <div class="grid grid-cols-2 gap-4">
+        <!-- Active daily users -->
+        <div class="bg-blue-100 rounded-lg p-4">
+            <h3 class="text-lg font-semibold mb-2">Active Daily Users</h3>
+            <p class="text-3xl font-bold">1234</p>
+        </div>
+
+        <!-- Posts created -->
+        <div class="bg-green-100 rounded-lg p-4">
+            <h3 class="text-lg font-semibold mb-2">Posts Created</h3>
+            <p class="text-3xl font-bold">5678</p>
+        </div>
+
+        <!-- Stores created -->
+        <div class="bg-yellow-100 rounded-lg p-4">
+            <h3 class="text-lg font-semibold mb-2">Stores Created</h3>
+            <p class="text-3xl font-bold">9012</p>
+        </div>
+
+        <!-- Accounts created -->
+        <div class="bg-purple-100 rounded-lg p-4">
+            <h3 class="text-lg font-semibold mb-2">Accounts Created</h3>
+            <p class="text-3xl font-bold">3456</p>
+        </div>
+
+        <!-- Shared Posts -->
+        <div class="bg-pink-100 rounded-lg p-4">
+            <h3 class="text-lg font-semibold mb-2">Shared Posts</h3>
+            <p class="text-3xl font-bold">7890</p>
+        </div>
+
+        <!-- Reported Posts -->
+        <div class="bg-red-100 rounded-lg p-4">
+            <h3 class="text-lg font-semibold mb-2">Reported Posts</h3>
+            <p class="text-3xl font-bold">2345</p>
+        </div>
+
+        <!-- Reported Stores -->
+        <div class="bg-orange-100 rounded-lg p-4">
+            <h3 class="text-lg font-semibold mb-2">Reported Stores</h3>
+            <p class="text-3xl font-bold">6789</p>
+        </div>
+
+        <!-- Calls made -->
+        <div class="bg-cyan-100 rounded-lg p-4">
+            <h3 class="text-lg font-semibold mb-2">Calls Made</h3>
+            <p class="text-3xl font-bold">123</p>
+        </div>
+    </div>
+
+    <div class="mt-8">
+      <h2 class="text-lg font-semibold mb-4">Date Filter</h2>
+      <div class="flex items-center space-x-4">
+          <label for="start-date" class="font-semibold">From:</label>
+          <input type="date" id="start-date" class="border border-gray-300 rounded-lg px-3 py-2">
+          <label for="end-date" class="font-semibold">To:</label>
+          <input type="date" id="end-date" class="border border-gray-300 rounded-lg px-3 py-2">
+        </div>
+    </div>
+</div>
+</div>
+
 </body>
 </html>

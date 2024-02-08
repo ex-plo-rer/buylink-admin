@@ -1,3 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+@layer components{
+  .input-solid{
+    @apply bg-gray-100 py-3 px-1 mt-2 border border-gray-300 rounded-md
+  }
+
+  .btn-primary{
+    @apply bg-[#243b55] rounded-md py-3 px-6 mt-2 text-white text-lg
+  }
+}
